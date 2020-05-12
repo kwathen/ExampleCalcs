@@ -32,7 +32,7 @@ ProbX1GrX2PlusDelta <- function(dA1,dB1,dA2,dB2, dDelta)
 
     # compute the limits based on the parameters
     dMin <- min( qbeta( 0.00001, dA1, dB1 ), qbeta( 0.00001, dA2, dB2 ))
-    dMax <- max( qbeta( 1.0 - 0.00001, dA1, dB1 ), qbeta( 1.0 - 0.00001, dA2, dB2 ))
+    dMax <- max( qbeta( 1.0 - 0.00001, dA1, dB1 ), qbeta( 1.0 - 0.000001, dA2, dB2 ))
     res <- integrate(fBetaIneqCalc, dMin, dMax, dA1 = dA1, dB1 = dB1, dA2 = dA2, dB2 = dB2, dDelta)
     res$value
 }
