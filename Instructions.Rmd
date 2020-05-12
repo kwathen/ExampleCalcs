@@ -5,7 +5,7 @@ date: "3/19/2020"
 output: html_document
 ---
 ## R Computation Package
-To build the package click on Build->Clean and Rebuild.   This is also available Build tab typically to right pane in R Studio. 
+To build the package click on Build->Clean and Rebuild.   This is also available Build tab typically to right pane in R Studio.  
 
 The R directory contains the files with functions in the library.   For example, R/CalcPosteriorProbsBinom.R contains the function that is called from the Shiny app.  
 
